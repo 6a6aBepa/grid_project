@@ -9,8 +9,8 @@
 }
 
 .general-header {
-  height: 220px;
   background-color: #ccc;
+  padding: 40px 200px;
 }
 
 .contacts {
@@ -18,6 +18,20 @@
   grid-template-rows: 51px;
   grid-template-columns: minmax(200px, 2fr) minmax(287px, 1fr) minmax(221px, 1fr) minmax(180px, 1fr);
   grid-column-gap: 57px;
+  margin-bottom: 25px;
+}
+.contacts div img:nth-child(2,3,4){
+  display: block;
+  float: left;
+  padding: 12px;
+  margin-right: 19px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #1a9bdc;
+}
+hr {
+  margin-bottom: 33px;
 }
 
 .contacts:nth-child(2) {
@@ -30,12 +44,28 @@
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 24px;
 }
+.social{
+  text-align: right;
+}
 
 .general-header li {
   display: inline-block;
   list-style-type: none;
 }
 
+.navi a {
+  text-decoration: none;
+  color: #6c6c6c;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navi li {
+  margin-right: 20px;
+}
+.social li{
+  margin-right: 15px;
+}
 .social a {
   display: inline-block;
   width: 24px;
@@ -47,11 +77,12 @@
 }
 
 .promo {
-  background: url(img/layer.jpg) no-repeat;
+  background: url("img/layer.jpg") no-repeat center center;
   height: 467px;
-  background-size: contain;
+  background-size: cover;
 }
-.promo::after{
+
+.promo::after {
   content: "";
   display: block;
   clear: both;
@@ -60,17 +91,19 @@
 .services {
   display: grid;
   grid-template-rows: minmax(200px, 360px);
-  grid-template-columns: repeat(4, minmax(264px, 1fr)) ;
+  grid-template-columns: repeat(4, minmax(264px, 1fr));
   background: linear-gradient(90deg, #43b1d2, #37c3a8);
 }
-.choose{
+
+.choose {
   height: 856px;
   padding: 111px 204px 72px 214px;
 }
-.choose article{
 
-}
-.grid-article{
+.choose article {}
+
+.grid-article {
   display: grid;
 }
+
 /* IDEA: i don't have idea */
